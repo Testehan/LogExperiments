@@ -1,11 +1,11 @@
-package com.testehan.log4j2;
+package com.testehan.slf4j;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-public class Main
-{
-    private static final Logger log = LogManager.getLogger(Main.class);
+public class Main {
+
+    private static Logger log = LoggerFactory.getLogger(Main.class);
 
     public static void main( String[] args )
     {
@@ -17,4 +17,3 @@ public class Main
         log.error("Hello this is an error message");
     }
 }
-
